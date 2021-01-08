@@ -10,7 +10,7 @@ a real taste of this world.
 
 ## Course Introduction
 I have heard alot about this course from different reddit forums and then decided to take it myself.
-Though there were more updated versions of this course on Udemy but I decided to stuck with the website it self: [Dr Charles R. Severance website](https://www.py4e.com)
+Though there were more updated versions of this course on Udemy but I decided to stuck with the website itself: [Dr Charles R. Severance website](https://www.py4e.com)
 
 ### This repo contains following content
 
