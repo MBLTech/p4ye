@@ -17,7 +17,7 @@ while True:
         break
     try:
         fnum = float(num)
-#putting 'continue' will reset the loop and it will again ask for input(handy for
+#putting 'continue' will reset the loop and it'll again ask for input(handy for
 # taking multiple inputs from the user)
     except:
         print('Invalid input')
