@@ -14,3 +14,4 @@ while True:
         if largest is None and smallest is None:
             value = None
             print(value)
+            i m working on it
