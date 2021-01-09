@@ -34,7 +34,7 @@ while True:
     multiple = xf * yf
     division = xf / yf
 
-    print('Summation:', sum)
-    print('Substraction:', substraction)
-    print('Multiplication:', multiple)
-    print('Division', division)
+    print('----Summation:', sum)
+    print('----Substraction:', substraction)
+    print('----Multiplication:', multiple)
+    print('----Division', division)
