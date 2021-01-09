@@ -14,21 +14,23 @@ while True:
     if x == 'done':
         print('Goodbye')
         break
+    try:
+        xf = float(x)
+    except:
+        print('Enter Numberics Only')
+        continue
+
     y = input('Enter 2nd Value: ')
     if y == 'done':
         print('Goodbye')
         break
     try:
-        xf = float(x)
         yf = float(y)
     except:
         print('Enter Numberics Only')
         continue
     sum = xf + yf
-    if xf >= yf:
-        substraction = xf - yf
-    elif xf < yf:
-        substraction = yf - xf
+    substraction = xf - yf
     multiple = xf * yf
     division = xf / yf
 
