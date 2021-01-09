@@ -11,8 +11,9 @@ seriously. I have stumbled upon many Youtube videos about programming in
 particular and python in general, found them quite intriguing and compatible
 with  my interest, so I  started thinking to take serious approach to
 learn more about it. So, I did little bit of research and found that python is
-the most beginner friendly, to really start my programming journey, and I took
-this course to give myself a real taste of this magical coding world.
+the most beginner friendly programming language, to really start my programming
+journey, and I took this course to give myself a real taste of this magical
+coding world.
 
 ## Course Introduction
 
