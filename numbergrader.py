@@ -1,23 +1,33 @@
-largest = 0
-smallest = 0
+'''
+ This program will take multiple inputs from the user and when he enters done
+ as his last input it will return largest and smallest values of user's
+ respective inputs
+'''
+
+#we are using none as in the loop first value will replace them automatically
+largest = None
+smallest = None
 
 while True:
     num = input('Input Number: ')
+
+#breaking program here will not mess up placeholders(would be replaced with
+# invalid input and whole program would throw an error.(try yourself))
     if num == 'done':
         break
     try:
         fnum = float(num)
+#putting 'continue' will reset the loop and it will again ask for input(handy for
+# taking multiple inputs from the user)
     except:
         print('Invalid input')
         continue
-    if largest == 0 or fnum >= largest:
+    if largest == None or fnum > largest:
         largest = fnum
-    else:
-        largest = largest
 
-    if smallest == 0 or fnum <= smallest:
+
+    if smallest == None or fnum < smallest:
         smallest = fnum
-    else:
-        smallest = smallest
+
 print('The largest value is', largest)
 print('The smallest value is', smallest)
