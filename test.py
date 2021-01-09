@@ -1,6 +1,6 @@
 largest = None
 smallest = None
-
+#how to resolve assigning both values to one var
 while True:
     num = input('Enter a Number: ')
     try:
