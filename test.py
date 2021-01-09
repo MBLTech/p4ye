@@ -1,6 +1,6 @@
 largest = None
 smallest = None
-#how to resolve assigning both values to one var
+
 while True:
     num = input('Enter a Number: ')
     try:
@@ -14,4 +14,3 @@ while True:
         if largest is None and smallest is None:
             value = None
             print(value)
-            i m working on it
