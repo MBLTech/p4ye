@@ -1,3 +1,7 @@
+'''
+A very simple program which tell user its grade when he/she enter its score.
+'''
+
 print('Range: 0-1')
 score = input("Enter Score: ")
 

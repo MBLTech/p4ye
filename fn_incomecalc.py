@@ -1,3 +1,8 @@
+'''
+Its the 2nd version of Incomecalc.py and made using function statement
+there is nothing new, just the same program with function defined.
+'''
+
 hrs = input("Enter Hours:")
 rate = input("Enter Rate:")
 
@@ -22,4 +27,4 @@ def computepay():
         reg = h * r
         return reg
 
-print('Pay', computepay()) 
+print('Pay', computepay())
