@@ -15,7 +15,7 @@ the most beginner friendly programming language, to really start my programming
 journey, and I took this course to give myself a real taste of this magical
 coding world.
 
-## &#xf02d; Course Introduction
+## 👩🏾‍🏫 Course Introduction
 
 I have heard a lot about this course from different Reddit forums and then
 decided to try it myself.Though there were more updated versions of this
