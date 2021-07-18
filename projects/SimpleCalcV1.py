@@ -9,6 +9,7 @@
 # This is very simple calc which only takes two arguments and spit out result
 # for four basic numeric operations, and continue to take arguments until your
 # with your two digits calc and enter 'done' for either of the input values
+print("Type 'done'to Quit.")
 while True:
     x = input('Enter 1st Value: ')
     if x == 'done':
