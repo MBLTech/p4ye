@@ -18,6 +18,7 @@ This version can tell total number of inputs, their summation and and average,
 no matter how many inputs you give it, but as the same time this version unable
 to calculate multiple and devision of the numbers.
 '''
+print("Type 'done' to Quit.")
 sum = 0
 count = 0
 
@@ -33,7 +34,7 @@ while True:
         continue
     sum = sum + fnum
     count = count + 1
-
-print('----Total Inputs:', count)
-print('----Sum:', sum)
-print('----Average:', sum/count)
+    
+    print('----Total Inputs:', count)
+    print('----Sum:', sum)
+    print('----Average:', sum/count)
