@@ -5,11 +5,11 @@
 ####################################################################
 ####################################################################
 '''
-
+print("Type 'done'to Quit.")
 while True:
     sum = 0
     firstvalue = input('Enter Your First Number: ')
-    if firstvalue == 'quit' :
+    if firstvalue == 'done' :
         print('Thankyou for using NRS')
         break
     try:
@@ -18,7 +18,7 @@ while True:
         print('Enter Integers Only')
         continue
     secondvalue = input('Enter Your Second Number: ')
-    if secondvalue == 'quit':
+    if secondvalue == 'done':
         print('Thankyou for using NRS')
     try:
         secondvalueint = int(secondvalue)
