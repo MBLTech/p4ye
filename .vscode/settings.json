@@ -1,5 +1,5 @@
 {
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.fontFamily": "monospace"
+    "terminal.integrated.fontFamily": "Hack"
 }
