@@ -1,5 +1,5 @@
 '''
-A Simple silly scrip to convert USfloor number into Europian floor number
+A Simple silly script to convert USfloor number into Europian floor number
 '''
 
 floor = input('Enter US Floor Number: ')
