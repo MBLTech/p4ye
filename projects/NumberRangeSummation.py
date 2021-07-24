@@ -5,8 +5,9 @@
 ####################################################################
 ####################################################################
 '''
-print("Type 'done'to Quit.")
+
 while True:
+    print ("Type 'done'to Quit.")
     sum = 0
     firstvalue = input('Enter Your First Number: ')
     if firstvalue == 'done' :
