@@ -22,7 +22,7 @@ decided to try it myself.Though there were more updated versions of this
 course on Udemy but I decided to stuck with the website itself. Link:
 [Dr Charles R. Severance ](https://www.py4e.com)
 
-### This repo contains following content
+### This Repo contains following content related to PY4E
 
 -   Solved Exercises: of py4e which I have done/solved during my learning
 period
