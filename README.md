@@ -4,7 +4,7 @@ Python for Everybody by Dr Charles R. Severance
 
 ## 💬 My Introduction
 
-Hi! I'm Sajid. M.
+Hi! I'm Sajid Mahmood.
 This is my first ever programming course. Though I have been roaming around in
  the programming world for a while, but never tried to take this field
 seriously. I have stumbled upon many Youtube videos about programming in
