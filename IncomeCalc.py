@@ -9,7 +9,7 @@ hrs = input("Enter Hours:")
 rate = input("Enter Rate:")
 
 # made failure proof using try except statements to allow user only enter
-# numbers(intergers/float) otherwise through an error
+# numbers(integers/float) otherwise through an error
 try:
     h = float(hrs)
     r = float(rate)
