@@ -1,5 +1,5 @@
 '''
-A simple exercie sript to find out total pay by multiplying hours worked with
+A simple exercise Script to find out total pay by multiplying hours worked with
 rate per hour.
 '''
 

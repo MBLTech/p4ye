@@ -9,7 +9,7 @@ for n in (88, 33, 32, 55, 9, 77, 55, 10, 11, 33, 55, 99, 101, 77, 6, 66, 33):
         largest = n #largest will get the first value from n number range
     elif largest < n : # If n is larger than the value of 'largest', loop will run and smallest will attain the value of n
         largest = n
-        print("The Largset so far:", largest)
+        print("The Largest so far:", largest)
 print("The Largest Number is:", largest)
 
 '''

@@ -1,8 +1,8 @@
 '''
-A Simple silly scrip to convert Europian Floor Number into USfloor number
+A Simple silly scrip to convert European Floor Number into USfloor number
 '''
 
-floor = input('Enter Europian Floor number: ')
+floor = input('Enter European Floor number: ')
 
 #made fail proof for inputs other than integers
 try:
