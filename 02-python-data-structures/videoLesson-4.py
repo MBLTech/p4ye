@@ -32,6 +32,3 @@ Python Dictionaries
 #     else:
 #         counts[name] = counts[name] + 1
 # print(counts)
-
-stuff = dict()
-print(stuff.get("candy", -1))
