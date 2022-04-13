@@ -16,15 +16,15 @@ Open the file romeo.txt and read it line by line. For each line, split the line 
 # print(finalList)
 
 # Mehtod: 2
-#
-# fname = input("Enter Your File Name: ")
-# fhandle = open(fname)
-# fr = fhandle.read()
-# fl = fr.split()
-# # print(fl)
-# flr = sorted(fl)
-# fd = list()
-# for i in flr:  # Removing duplicates from the list
-#     if i not in fd:
-#         fd.append(i)
-# print(str(fd))
+
+fname = input("Enter Your File Name: ")
+fhandle = open(fname)
+fr = fhandle.read()
+fl = fr.split()
+# print(fl)
+flr = sorted(fl)
+fd = list()
+for i in flr:  # Removing duplicates from the list
+    if i not in fd:
+        fd.append(i)
+print(str(fd))
