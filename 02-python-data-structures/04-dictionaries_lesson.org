@@ -1,0 +1,55 @@
+#+title: 04 Python Dictionaries
+#+description: Practice is done during 'Python Data Structures' class offered by University of Michigan of Week 5.
+#+author: Sajid Mahmood
+#+date: 13 April 2022
+
+#+options: toc:2
+
+#+TOC: headlines 2
+
+* Dictionary
+
+** They are a collection variables
+** A bag of things in which everything is labled with key:value pairs, unlike lists which makes them unique
+** Dict are mutable too
+** Dict literals (Constants) use curly braces and key:value pairs
+
+#+begin_src python :results output
+myDict = dict()
+myDict["firstitem"] = 9
+myDict["seconditem"] = "Apple"
+print(myDict)
+print(myDict["seconditem"])
+myDict["seconditem"] = "Jelly"  # dict are mutable
+print(myDict)
+#+end_src
+
+#+RESULTS:
+: {'firstitem': 9, 'seconditem': 'Apple'}
+: Apple
+: {'firstitem': 9, 'seconditem': 'Jelly'}
+
+* Counting with Dictionary
+
+#+begin_src python :results output
+counts = dict()
+names = ["fred", "garry", "tom", "fred", "fred", "tom"]
+# Method one for counting
+for name in names:
+    counts[name] = counts.get(name, 0) + 1
+print(counts)
+# get(x, 0) for counting
+counts2 = dict()
+names2 = ["fred", "garry", "tom", "fred", "fred", "tom"]
+for name2 in names2:
+    if name2 not in counts2:
+        counts2[name2] = 1
+    else:
+        counts2[name2] = counts2[name2] + 1
+print(counts2)
+
+#+end_src
+
+#+RESULTS:
+: {'fred': 3, 'garry': 1, 'tom': 2}
+: {'fred': 3, 'garry': 1, 'tom': 2}
