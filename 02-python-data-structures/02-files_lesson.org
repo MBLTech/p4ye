@@ -1,0 +1,71 @@
+#+title: 02 Python Files
+#+description: Practice is done during 'Python Data Structures' class offered by University of Michigan of Week 3.
+#+author: Sajid Mahmood
+#+date: 13 April 2022
+
+
+* Opening a File
+
+#+begin_lang python
+fileHandle = open(
+    "textFile.txt", "r"
+)  # Opening .txt file with read permission or 'w' for write permissions
+
+File = open("someFile.txt")
+for sometext in File:
+    print("sometext")  # It will print out the text as a string line by line
+#+end_lang
+
+
+* Counting Lines
+
+#+begin_src python :results output
+fhandle = open("sample.txt")
+count = 0
+for line in fhandle:
+    count = count + 1
+print("Line Count:", count)
+#+end_src
+
+#+RESULTS:
+: Line Count: 146
+
+#+begin_src python :results output
+fhandle = open("sample.txt")
+chars = fhandle.read()
+print(len(chars))
+print(chars[300:400])
+
+for line in fhandle:
+    if not line.startswith("we"):
+        continue
+    print(line)
+
+for line in fhandle:
+    line = line.rstrip()
+    if not "we" in line:
+        continue
+    print(line)
+#+end_src
+
+#+RESULTS:
+: 11535
+:  the data.
+: It's a sequence. Well, we already have a loop,
+: the determinant loop, the for loop, and al
+
+* Prompt for File Names and Error Proofing
+
+#+begin_lang python
+fname = input("Please Enter your File Name: ")
+try:
+    fhand = open(fname)
+except:
+    print("Not a Valid File: ", fname)
+    quit()
+count = 0
+for line in fhand:
+    if line.startswith("we"):
+        count = count + 1
+print("total count", count, "in", fname)
+#+end_lang
