@@ -1,0 +1,105 @@
+#+title: 01 Python strings
+#+description: Practice is done during 'Python Data Structures' class offered by University of Michigan of Week 1.
+#+author: Sajid Mahmood
+#+date: 13 April 2022
+
+* Index Operator
+
+- used for position, slicing and others
+
+#+begin_src python  :results output
+fruit = 'banana'
+index = 0
+while index < len(fruit):
+  letter = fruit[index]
+  index = index + 1
+  print(index, letter)
+#+end_src
+
+#+RESULTS:
+: 1 b
+: 2 a
+: 3 n
+: 4 a
+: 5 n
+: 6 a
+
+
+#+begin_src python  :results output
+fruit = 'banana'
+index = 0
+letter = fruit[3]
+print(letter)
+#+end_src
+
+#+RESULTS:
+: a
+
+
+#+begin_src python  :results output
+fruit = 'annas'
+for letter in fruit:
+  print(letter)
+#+end_src
+
+#+RESULTS:
+: a
+: n
+: n
+: a
+: s
+
+#+begin_src python :results output
+fruit = 'banana'
+index = 0
+for letter in fruit:
+  if letter == 'a':
+    index = index + 1
+print(index)
+#+end_src
+
+#+RESULTS:
+: 3
+
+* Search and Replace
+
+#+begin_src python :results output
+fruit = 'banana'
+print('Letter Position:', fruit.find('a'))
+# To replace strings letter with other
+print(fruit.replace('a', 'b'))
+
+# To check If line statrs with some ('i')
+line = 'I know you are a real hero'
+print(line.startswith('real'))
+#+end_src
+
+#+RESULTS:
+: Letter Position: 1
+: bbnbnb
+: False
+
+* Parsing and Extracting
+
+#+begin_src python :results output
+data = 'from sajidmahmood@sajidonsec.com Sat jan 14 2020'
+atpos = data.find('@')
+print('@ Position:', atpos)
+sppos = data.find(' ', atpos)
+print('Space Position:', sppos)
+# slicng it off, x:y, till y but not including y
+reqdata = data[atpos+1 : sppos]
+print('Required Addr:', reqdata)
+
+data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+dotpos = data.find('.')
+print('dotpos:', dotpos)
+print('Sliced dotpos:', data[dotpos:dotpos+3])
+#+end_src
+
+#+RESULTS:
+: @ Position: 17
+: Space Position: 32
+: Required Addr: sajidonsec.com
+: dotpos: 12
+: Sliced dotpos: .ma
