@@ -1,0 +1,37 @@
+#+title: 05 Python Tuples
+#+description: Practice is done during 'Python Data Structures' class offered by University of Michigan of Week 6.
+#+author: Sajid Mahmood
+#+date: 13 April 2022
+
+* Tuples
+** Limited version of lists but are more efficient in term of memory management
+** Immutable
+** Cannot remove, append, pop etc
+** Tuples are comparable, which is their USP
+
+* Sort Dict by Key
+
+#+begin_src python :results output
+di = {"a": 24, "c": 2, "d": 10, "b": 6}
+sort = sorted(di.items())
+print('Sorted Dict by Key:',sort)
+#+end_src
+
+#+RESULTS:
+: Sorted Dict by Key: [('a', 24), ('b', 6), ('c', 2), ('d', 10)]
+
+* Sort Dict by Value
+
+#+begin_src python :results output
+di = {"a": 24, "c": 2, "d": 10, "b": 6}
+tmp = list()
+for k, v in di.items():
+    tmp.append((v, k))
+print('Reverse Dict:', tmp)
+stmp = sorted(tmp)
+print('Sorted Dict by Value:',stmp)
+#+end_src
+
+#+RESULTS:
+: Reverse Dict: [(24, 'a'), (2, 'c'), (10, 'd'), (6, 'b')]
+: Sorted Dict by Value: [(2, 'c'), (6, 'b'), (10, 'd'), (24, 'a')]
