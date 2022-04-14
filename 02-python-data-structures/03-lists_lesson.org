@@ -1,0 +1,59 @@
+#+title: 03 Python Lists
+#+description: Practice is done during 'Python Data Structures' class offered by University of Michigan of Week 4.
+#+author: Sajid Mahmood
+#+date: 13 April 2022
+
+* Lists
+
+** Strings are immutable while lists are mutable
+** Lists can consist of integers or strings or both
+** Lists can have nested list inside but that list will be considered as a single member of the parent list
+
+#+begin_src python :results output
+myList = [3, "dog", 4, 5, "cat"]
+print(myList)
+myList[3] = 10  # list are mutable
+print(list(myList))  # range usually refers to as elements inside list
+#+end_src
+
+#+RESULTS:
+: [3, 'dog', 4, 5, 'cat']
+: [3, 'dog', 4, 10, 'cat']
+
+* List Manipulation
+
+** Slicing of lists possible
+** Lists can be concatenated
+** List can be  used for large number of inputs summation
+
+#+begin_lang python
+numlist = list()
+while True:
+    try:
+        num = input("Enter a Number: ")
+        num = int(num)
+    except:
+        print("Invalid Argument. Goodbye.")
+        quit()
+    if num == "done":
+        break
+    numlist.append(num)
+print(numlist)
+#+end_lang
+
+* Lists and Strings
+
+** Strings split into lists
+
+#+begin_src python :results output
+some = "My name is Someone"
+print(some.split())
+str1 = "Your:Name:Your:Country"
+print(str1.split()) # Bydefault split() uses spaces for splitting, multiple spaces count as one
+print(str1.split(":"))  # splitting based on colon
+#+end_src
+
+#+RESULTS:
+: ['My', 'name', 'is', 'Someone']
+: ['Your:Name:Your:Country']
+: ['Your', 'Name', 'Your', 'Country']
