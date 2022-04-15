@@ -1,0 +1,150 @@
+#+title: 01 Python Basic Syntax
+#+author: Sajid Mahmood
+#+source: Google IT Automation with Python Professional Certificate
+#+include: Crash Course on Python
+#+week: Week 2
+#+date:  <2022-04-15 Fri>
+#+options: toc:2
+
+* Data Types
+
+src_python{type()} used to evaluate data type of something.
+
+** Strings
+** Integers
+** Floats
+
+*** Type Error
+
+When attempting to mix incompatible data types, you may encounter a TypeError.
+
+
+* Expressions, Numbers, and Type Conversions
+
+Only explicit conversions are possible
+
+** Implicit Conversions
+
+'Implicit conversion is where the interpreter helps us out and automatically converts one data type into another, without having to explicitly tell it to do so.'
+
+** Explicit Conversions
+'By contrast, explicit conversion is where we manually convert from one data type to another by calling the relevant function for the data type we want to convert to.'
+
+* Functions
+
+Example of a Function:
+#+begin_lang python
+def function(name): # function can have multiple parameter
+    print('Hello World')
+#+end_lang
+
+** Returning Values Using Functions
+
+Return keyword in the function can store the output of the function in a variable for later reference.
+#+begin_src python :results output
+def get_seconds(hours, minutes, seconds):
+  return 3600*hours + 60*minutes + seconds
+
+amount_a = get_seconds(2, 30, 0)
+amount_b = get_seconds(0, 45, 15)
+result = amount_a + amount_b
+print(result)
+#+end_src
+
+#+RESULTS:
+: 11715
+
+We can have function return nothing, in which case the function simply exits.
+
+#+begin_src python :results output
+def greeting(name):
+    print(name + "   : You're welcome")
+greet = greeting('Alex')
+print(greet)
+#+end_src
+
+#+RESULTS:
+: Alex   : You're welcome
+: None
+
+* The Principles of Code Reuse
+
+** Don't resuse same code again and again, instead write a function to avoid code redundancy
+
+#+begin_lang python
+# REPLACE THIS STARTER CODE WITH YOUR FUNCTION
+june_days = 30
+print("June has " + str(june_days) + " days.")
+july_days = 31
+print("July has " + str(july_days) + " days.")
+#+end_lang
+
+We write a function tackle redundancy in above code
+
+#+begin_src python :results output
+def month_days(month, days):
+    return month + ' has ' + str(days) + ' days.'
+count1 = month_days('June', 30)
+count2 = month_days('July', 31)
+print(count1 + '\n' + count2)
+# new line print 2nd Method
+print(count1, count2, sep='\n')
+#+end_src
+
+#+RESULTS:
+: June has 30 days.
+: July has 31 days.
+: June has 30 days.
+: July has 31 days.
+
+* Code Style
+
+** Avoiding Redundancy
+
+It is necessary to write code in a self-documented(easily readable) format. So no unnecessary headaches occur when revisiting the code either it's by your or someone else
+
+** Re-factoring
+
+'Rewriting a redundant legacy code in self-documented manner'
+
+Example:
+
+A redundant code,
+#+begin_lang python
+def f1(x, y):
+	z = x*y  # the area is base*height
+	print("The area is " + str(z))
+#+end_lang
+
+So, re-factoring it make the code more readable,
+#+begin_lang python
+def rectangle_area(base, height):
+    area = base * height/2
+    print('The area is ' + str(area))
+#+end_lang
+
+** Write meaningful comments
+
+* Conditionals
+
+** Comparing Operator
+
+*** To check if two values are the same, we can use the equality operator: ==
+*** To check if two values are not the same, we can use the not equals operator: !=
+*** We can also check if values are greater than or lesser than each other using > and <
+*** If you try to compare data types that aren’t compatible, like checking if a string is greater than an integer, Python will throw a TypeError
+*** logical operators(and, or, and not) can make complex comparison operators
+
+
+** Branching with if, else, elif Statements
+
+#+begin_lang python
+if condition1:
+	if-block
+elif condition2:
+	elif-block
+else:
+	else-block
+#+end_lang
+
+Remember: The if-block will  execute if condition1 is True. The elif-block will  execute if condition1 is False and condition2 is True. The else block will  execute when all the specified conditions are false.
