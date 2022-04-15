@@ -1,0 +1,61 @@
+#+title: 01 Programing Intro
+#+author: Sajid Mahmood
+#+source: Google IT Automation with Python Professional Certificate
+#+include: Crash Course on Python
+#+week: Week 1
+#+date:  <2022-04-15 Fri>
+#+options: toc:2
+
+* Programming
+
+** Program
+
+'A list of Instructions that the computer has to follow to reach a goal'
+
+** Syntax
+
+'The set of rules, how a sentence is constructed'
+In programming terms,
+'The rules for how each instruction is written'
+
+** Semantics
+
+'The actual meaning of a Syntax'
+In programming terms,
+'The effect the instructions have'
+
+** Script
+
+'The code with short development cycle and can deploy rapidly'
+
+* Automation
+
+'The process of replacing manual step with one that happens automatically'
+
+* Python
+
+** Interpreter
+
+'An interpreter is a program that reads and executes code'
+
+** Python Interpreter
+
+'The program that reads what's in the recipe and translates it into instructions for your computer to follow'
+
+** Functions and keywords
+
+*** Function
+
+'Functions are pieces of code that perform a unit of work'
+
+*** Keywords
+
+'Keywords are reserved words that are used to construct instructions.'
+
+| False  | Class    | finally | is       | return |
+| None   | Continue | for     | lambda   | try    |
+| True   | def      | from    | nonlocal | while  |
+| and    | del      | global  | not      | with   |
+| as     | elif     | if      | or       | yield  |
+| assert | else     | import  | pass     |        |
+| break  | except   | in      | raise    |        |
