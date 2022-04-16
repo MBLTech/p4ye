@@ -1,0 +1,87 @@
+#+title: 03 Python Loops
+#+author: Sajid Mahmood
+#+source: Google IT Automation with Python Professional Certificate
+#+include: Crash Course on Python
+#+week: Week 3
+#+date:  <2022-04-15 Fri>
+#+options: toc:2
+
+* Loop
+
+** while loop
+
+'Instruct your computer to continuously execute your code based on the value of a condition'
+
+#+begin_lang python
+while condition:
+    body
+#+end_lang
+
+*** Common Pitfalls with Variable Initialization
+
+- undefined variables where one forgets to declare/initialize the variables
+- repeated variables which can mess up output without interpreter errors
+
+*** Infinite loops and Code Blocks
+
+- easy mistake happens when using loops is introducing an infinite loop
+
+** for loop
+
+'for loops allow you to iterate over a sequence of values.'
+
+#+begin_lang python
+for variable in sequence:
+    body
+#+end_lang
+
+** Which Loop, When?
+
+Not sure whether to use a for loop or a while loop? Remember that a while loop is great for performing an action over and over until a condition has changed. A for loop works well when you want to iterate over a sequence of elements.
+
+** Range() Function
+
+To quickly recap the range() function when passing one, two, or three parameters:
+
+- One parameter will create a sequence, one-by-one, from zero to one less than the parameter.
+- Two parameters will create a sequence, one-by-one, from the first parameter to one less than the second parameter.
+- Three parameters will create a sequence starting with the first parameter and stopping before the second parameter, but this time increasing each step by the third parameter
+
+** Nested for loop
+
+
+** Common error in for loops
+
+- Forgetting that the upper limit of a range() isn’t included.
+- Iterating over non-sequences. Integer numbers aren’t iterable. Strings are iterable letter by letter, but that might not be what you want.
+
+** Break and Continue
+
+You can interrupt both while and for loops using the break keyword. We normally do this to interrupt a cycle due to a separate condition.
+
+You can use the continue keyword to skip the current iteration and continue with the next one. This is typically used to jump ahead when some of the elements of the sequence aren’t relevant.
+
+** Recursion
+
+'The repeated application of the same procedure to a smaller problem.'
+
+- Recursion lets us tackle complex problems by reducing the problem to a simpler one.
+- In programming, recursion is a way of doing a repetitive task by having a function call itself.
+
+*** Base Case
+
+Recursion function calls itself with a modified parameter until reaches a specific condition called base case
+
+*** Recursive Case
+
+The recursive case calls the function again, with a different value. The base case returns a value without calling the same function.
+
+  #+begin_lang python
+def factorial(n):
+    if n < 2: # Base case
+        return 1
+    return n * factorial(n-1) # recursive case
+  #+end_lang
+
+
+**** Recursion can be called only 1000 times
