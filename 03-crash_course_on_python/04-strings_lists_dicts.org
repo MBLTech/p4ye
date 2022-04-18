@@ -1,0 +1,144 @@
+
+#+title: 01 Strings, Lists and Dictionaries
+#+author: Sajid Mahmood
+#+source: Google IT Automation with Python Professional Certificate
+#+include: Crash Course on Python
+#+week: Week 4
+#+date:  <2022-04-18 Mon>
+#+options: toc:2
+
+* Strings
+
+** Basic Structures Introduction
+
+*** Strings
+*** Lists
+*** Dictionaries
+*** Tuples
+
+** Strings
+
++ Data type
++ Reside between double quotes
++ Strings can concatenate
++ len(str) tells about length of strings
++ str * n = multiple of string content
+
+** The Parts of a String
+
+*** String indexing
+
+This operation lets us access the character in a given position or index using square brackets and the number of the position we want.
++ Index starts with 0, 1, 2, ......
+
+*** Negative Indexing
+
+It indexes from the last member of the string.
++ Negative indexing starts with -1, -2, .......
+
+  #+begin_src python :results output
+def first_and_last(message):
+    if len(message) == 0:
+        return False
+    elif message[0] == message [-1]:
+        return True
+    elif message[0] != message[-1]:
+        return False
+print(first_and_last('esle'))
+print(first_and_last('tree'))
+print(first_and_last(''))
+  #+end_src
+
+  #+RESULTS:
+  : True
+  : False
+  : False
+
+*** Slice
+
+The portion of a string that can contain more than one character; also sometimes called a substring.
++ You can do this by creating a range, using a colon as a separator between the start and end of the range, like =[2:5]=.
++ This range is similar to the range() function. It includes the first number, but goes to one less than the last number.
+
+** Creating New Strings
+
+Following are the basic string methods:
+
+*** String Class Method
+
+A function associated with a specific class.
+
+#+begin_src python :results output
+pets = 'Cats & Dogs'
+print(pets.index('&'))
+#+end_src
+
+#+RESULTS:
+: 5
+
+*** =in= Method
+
+We can use =in= to avoid valueError in case our substring doesn't exist in the string
+
++ =substring in string= will return either ~True~ or ~False~.
++ here =in= is a conditional which will either be ~T~ or ~F~.
+
+*** =lower()= or =upper()= Methods
+
++ Convert string into upper of lower case characters
+
+  ~STR.lower()~
+  ~str.upper()~
+
+*** =strip()= Method
+
++ Get rid of the surrounding white spaces, tab, and new line characters etc in the string
++ =lstrip= to get rid on left
++ =rstrip= to get rid on right
+
+*** =count()= Method
+
+~str.count('substring')~ counts the occurrence of number of times, substring in the string.
+
+*** =endswith()= Method
+
+~str.endswith('substring')~ checks if a string endswith a substring or not.
+
+*** =isnumeric()= Method
+
+~str.isnumeric.()~ checks whether strings is numeric or not
+
+*** =join()= Method
+
+~' '.join([str1 + str2 + str3])~ method joins these strings with given string (spaces).
+
+*** =split()= Method
+
+The split method return the list of all the words in the initial string.
+
+** Formatting String
+
+*** =format()= method
+To do this, create a string containing curly brackets, ~{}~, as a placeholder, to be replaced. Then call the format method on the string using ~.format()~ and pass variables as parameters. The variables passed to the method will then be used to replace the curly bracket placeholders. This method automatically handles any conversion between data types for us.
+
++ If the curly brackets are empty, they’ll be populated with the variables passed in the order in which they're passed.
++ However, you can put certain expressions inside the curly brackets to do even more powerful string formatting operations. You can put the name of a variable into the curly brackets, then use the names in the parameters. This allows for more easily readable code, and for more flexibility with the order of variables.
+
+**** Formatting Expression
+
+You can also put a formatting expression inside the curly brackets, which lets you alter the way the string is formatted.
+
++ For example, the formatting expression ~{:.2f}~ means that you’d format this as a float number, with two digits after the decimal dot. The colon acts as a separator from the field name, if you had specified one.
++  You can also specify text alignment using the greater than operator: ~>~. For example, the expression ~{:>3.2f}~ would align the text three spaces to the right, as well as specify a float number with two decimal places. String formatting can be very handy for outputting easy-to-read textual output.
+
+* Sring Operations
+
++ len(string) Returns the length of the string
+
++ for character in string Iterates over each character in the string
+
++ if substring in string Checks whether the substring is part of the string
+
++ string[i] Accesses the character at index i of the string, starting at zero
+
++ string[i:j] Accesses the substring starting at index i, ending at index j-1. If i is omitted, it's 0 by default. If j is omitted, it's len(string) by default.
