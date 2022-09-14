@@ -65,4 +65,8 @@
 # print(message.split(" "))
 # print(message.replace(" ", "|"))
 
+# sentence = "It's raining like cats and cats"
+# print(sentence.rfind("cats"))
+# print(sentence[27:])
+
 
