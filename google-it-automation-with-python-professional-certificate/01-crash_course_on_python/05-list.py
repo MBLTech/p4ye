@@ -7,7 +7,7 @@
 # print(fruits)
 
 # fruits.insert(0, "Orange")
-# fruits.insert(-1, "Avacado")
+# fruits.insert(-1, "Avocado")
 # print(fruits)
 
 # Lists and Tuples
@@ -18,7 +18,7 @@
 
 # Iterating over lists and Tuples
 '''
-Enumerate methods has two variables, index and elememnt of the list.
+Enumerate methods has two variables, index and element of the list.
 '''
 # winners = ["David", "John", "Reese"]
 # # for index, person in enumerate(winners):
